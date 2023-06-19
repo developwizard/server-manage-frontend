@@ -2,3 +2,34 @@
 @import url('http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
 
+body {
+  background: #edf1f5;
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
+.table-title {
+  background-color: #255373;
+  color: #fff;
+  padding: 1rem;
+}
+.header-button,
+.header-title {
+  margin: 1rem;
+}
