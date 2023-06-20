@@ -5,6 +5,7 @@ import {catchError, map, startWith} from "rxjs/operators";
 import {AppState} from "./interface/app-state";
 import {CustomResponse} from "./interface/custom-response";
 import {DataState} from "./enum/data-state.enum";
+import {Status} from "./enum/status.enum";
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import {DataState} from "./enum/data-state.enum";
 export class AppComponent implements OnInit {
   appState$: Observable<AppState<CustomResponse>>;
   readonly dataState = DataState;
+  readonly status = Status;
 
   constructor(private serverService: ServerService) {
   }
