@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ServerService} from "./service/server.service";
-import {Observable, of} from "rxjs";
+import {BehaviorSubject, Observable, of} from "rxjs";
 import {catchError, map, startWith} from "rxjs/operators";
 import {AppState} from "./interface/app-state";
 import {CustomResponse} from "./interface/custom-response";
@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
   appState$: Observable<AppState<CustomResponse>>;
   readonly dataState = DataState;
   readonly status = Status;
+  private filterSubject = new BehaviorSubject<string>('');
+  filterStatus$ = this.filterSubject.asObservable();
 
   constructor(private serverService: ServerService) {
   }
