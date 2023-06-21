@@ -21,7 +21,19 @@ body {
 }
 
 .material-icons {
-  font-size: 1rem;
+  font-size: 2rem;
+}
+
+.material-icons:hover {
+  color: deepskyblue;
+}
+
+i.ping-icon {
+  color: darkcyan;
+}
+
+.delete i {
+  color: chocolate;
 }
 
 .table-title {
@@ -29,7 +41,18 @@ body {
   color: #fff;
   padding: 1rem;
 }
+
 .header-button,
 .header-title {
   margin: 1rem;
+}
+
+.container-xl {
+  background: #fff;
+  padding-bottom: 1rem;
+}
+
+.alert-danger {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
