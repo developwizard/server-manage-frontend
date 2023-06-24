@@ -120,4 +120,8 @@ export class AppComponent implements OnInit {
       downloadLink.click();
       document.body.removeChild(downloadLink);
   }
+
+  printReport() {
+    window.print();
+  }
 }
